@@ -15,8 +15,8 @@ public class Program {
 		
 		int neg = 0;
 		
-		for(int i = 0; i < n; i++) {
-			for(int j = 0; j < n; j++) {
+		for(int i = 0; i < mat.length; i++) {
+			for(int j = 0; j < mat[i].length; j++) {
 				
 				System.out.println("Insira o valor da posição " + i + "" + j);
 				mat[i][j] = scan.nextInt();
@@ -28,7 +28,7 @@ public class Program {
 		}
 		
 		System.out.println("Main Diagonal: ");
-		for(int i = 0; i < n; i++) {
+		for(int i = 0; i < mat.length; i++) {
 			System.out.println(mat[i][i] + " ");
 		}
 		
